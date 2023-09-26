@@ -14,7 +14,7 @@ public class Contact {
     @Column
     private String username;
     @Column
-    private String secondUsername;
+    private String secondusername;
     @Column
     private int phone;
     @Column
@@ -44,12 +44,12 @@ public class Contact {
         this.username = username;
     }
 
-    public String getSecondUsername() {
-        return secondUsername;
+    public String getSecondusername() {
+        return secondusername;
     }
 
-    public void setSecondUsername(String secondUsername) {
-        this.secondUsername = secondUsername;
+    public void setSecondusername(String secondusername) {
+        this.secondusername = secondusername;
     }
 
     public int getPhone() {

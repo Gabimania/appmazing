@@ -6,12 +6,12 @@ import java.util.List;
 
 public interface IProductService {
 
-    Productdto queryProduct (Productdto product);
+    Productdto queryProduct (Productdto productdto);
     List<Productdto> queryAllProducts();
 
-    int insertProduct (Productdto product);
-    int updateProduct (Productdto product);
+    int insertProduct (Productdto productdto);
+    int updateProduct (Productdto productdto);
 
-    int deleteProduct (Productdto product);
+    int deleteProduct (Productdto productdto);
 
 }

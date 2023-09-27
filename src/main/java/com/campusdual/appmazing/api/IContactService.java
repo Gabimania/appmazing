@@ -6,11 +6,11 @@ import java.util.List;
 
 public interface IContactService {
 
-    Contactdto queryContact (Contactdto contact);
+    Contactdto queryContact (Contactdto contactdto);
     List<Contactdto> queryAllContacts();
 
-    int insertContact (Contactdto contact);
-    int updateContact (Contactdto contact);
+    int insertContact (Contactdto contactdto);
+    int updateContact (Contactdto contactdto);
 
-    int deleteContact (Contactdto contact);
+    int deleteContact (Contactdto contactdto);
 }

@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductController {
     @Autowired
-    IProductService productService;
+    private IProductService productService;
     @GetMapping
     public String testController(){
         return "Products controller works!";
@@ -35,5 +35,17 @@ public class ProductController {
     @GetMapping(value = "/getAll")
     public List<Productdto> queryAllProducts(){
         return this.productService.queryAllProducts();
+    }
+    @PostMapping(value= "/add")
+    public int insertProduct(@RequestBody Productdto product){
+        return this.productService.insertProduct(product);
+    }
+    @PutMapping(value= "/update")
+    public int updateProduct(@RequestBody Productdto product){
+        return this.productService.updateProduct(product);
+    }
+    @DeleteMapping(value ="/delete")
+    public int deleteProduct(@RequestBody Productdto product){
+        return this.productService.deleteProduct(product);
     }
 }

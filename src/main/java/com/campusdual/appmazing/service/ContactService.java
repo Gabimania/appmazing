@@ -29,7 +29,7 @@ public class ContactService implements IContactService {
 
     @Override
     public int insertContact(Contactdto contactdto) {
-        Contact contact = ContactMapper.INSTANCE.toEntity(contactDao);
+        Contact contact = ContactMapper.INSTANCE.toEntity(contactdto);
         this.contactDao.saveAndFlush(contact);
         return contact.getId();
 

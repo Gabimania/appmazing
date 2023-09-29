@@ -1,0 +1,607 @@
+{
+	"info": {
+		"_postman_id": "9e5fcaf6-09eb-4101-9a1b-d6187801d9ef",
+		"name": "Appmazing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30114051"
+	},
+	"item": [
+		{
+			"name": "CRUD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30030/products",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRUD Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30030/category",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRUD Contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30030/contacts",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Controller method Contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30030/contacts/testMethod",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"contacts",
+						"testMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Controller method Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30030/category/testMethod",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category",
+						"testMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Controller Body Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Gabriel",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/products",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Controller Body Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Gabriel",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/category",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/contacts/get",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"contacts",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/category/get",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Luisito\",\r\n\"username\": \"Sierra\",\r\n\"secondusername\": \"López\",\r\n\"phone\": 345654323,\r\n\"email\": \"fernandito@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/contacts/add",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"contacts",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"FRITO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/category/add",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Contact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/contacts/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"contacts",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Contact",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 14,\r\n\"name\": \"Fernando\",\r\n\"username\": \"Sierra\",\r\n\"secondusername\": \"López\",\r\n\"phone\": 345654323,\r\n\"email\": \"fernando@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/contacts/update",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"contacts",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Contact Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 2,\r\n\"name\": \"COCIDO\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/category/update",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30030/contacts/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"contacts",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30030/category/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Controller Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Gabriel",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/products",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/products/get",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"products",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/products/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"products",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product delete Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/products/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"products",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 11,\r\n    \"name\": \"Olive oil\",\r\n    \"stock\": 125,\r\n    \"price\": 14.45,\r\n    \"active\": true,\r\n    \"date_added\": \"2022-12-31T23:00:00.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/products/update",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"products",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Olived jajajaja oil\",\r\n    \"stock\": 125,\r\n    \"price\": 4.45,\r\n    \"active\": true,\r\n    \"date_added\": \"2022-12-31T23:00:00.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/products/add",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"products",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product ALL",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/products/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"products",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Controller Method",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30030/products/testMethod",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"products",
+						"testMethod"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

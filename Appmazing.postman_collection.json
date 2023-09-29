@@ -25,6 +25,24 @@
 			"response": []
 		},
 		{
+			"name": "CRUD Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30030/category",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "CRUD Contact",
 			"request": {
 				"method": "GET",
@@ -62,6 +80,25 @@
 			"response": []
 		},
 		{
+			"name": "Test Controller method Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30030/category/testMethod",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category",
+						"testMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Test Controller Body Contact",
 			"request": {
 				"method": "POST",
@@ -83,6 +120,33 @@
 					"port": "30030",
 					"path": [
 						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Controller Body Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Gabriel",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/category",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category"
 					]
 				}
 			},
@@ -117,6 +181,34 @@
 			"response": []
 		},
 		{
+			"name": "Get Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/category/get",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Add Contact",
 			"request": {
 				"method": "POST",
@@ -138,6 +230,34 @@
 					"port": "30030",
 					"path": [
 						"contacts",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"FRITO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/category/add",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category",
 						"add"
 					]
 				}
@@ -201,6 +321,34 @@
 			"response": []
 		},
 		{
+			"name": "Update Contact Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 2,\r\n\"name\": \"COCIDO\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/category/update",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get All Contacts",
 			"request": {
 				"method": "GET",
@@ -213,6 +361,25 @@
 					"port": "30030",
 					"path": [
 						"contacts",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30030/category/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"category",
 						"getAll"
 					]
 				}
@@ -276,6 +443,34 @@
 		},
 		{
 			"name": "Product delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30030/products/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "30030",
+					"path": [
+						"products",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product delete Copy",
 			"request": {
 				"method": "DELETE",
 				"header": [],
